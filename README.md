@@ -27,20 +27,20 @@ Make sure the following are installed before building:
 
 ## 🚀 Build Instructions
 
+## Clone the repository
 ```bash
-# Clone the repository
 git clone https://github.com/spacedragonx/File-Downloader
 cd File-Downloader
 ```
-# Install dependencies via vcpkg (example)
+## Install dependencies via vcpkg (example)
 ```bash
 vcpkg install cpr cli11 indicators
 ```
-# Configure build
+## Configure build
 ```bash
 cmake -B build -S .
 ```
-# Build project
+## Build project
 ```bash
 cmake --build build
 ```
