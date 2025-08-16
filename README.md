@@ -1,94 +1,45 @@
-# Eru: Multi-threaded File Downloader
-<img width="957" alt="image" src="https://github.com/user-attachments/assets/98f77b00-3c82-43f9-bfe9-1dd2ba7d6ebf">
+# Multi-threaded File Downloader
+<img width="957" alt="image" src="">
 
-Eru is a simple and efficient multi-threaded file downloader designed to accelerate your download speeds. Written in C++, Eru leverages multiple threads to download file chunks concurrently, potentially increasing download speeds significantly. I made this as I had a simple requirement and did not want to buy IDM or pirate it.
 
-## Features
+## 📌 Overview
+Multi-threaded File Downloader is a modern C++ project built with **C++17** and **CMake**.  
+It demonstrates usage of popular libraries like **libcurl**, **CLI11**, and **indicators**, while following clean coding practices and modular design.  
 
-- Multi-threaded downloading
-- Progress bar with real-time updates
-- Automatic filename detection from URL
-- Customizable number of download threads
-- Supports both HTTP and HTTPS
-- Displays download speed and estimated time remaining
-- Automatic merging of downloaded chunks
+---
 
-## Requirements
+## ⚡ Features
+- Command-line interface using **CLI11**
+- Progress indicators with **indicators**
+- HTTP requests powered by **cpr (libcurl wrapper)**
+- CMake-based build system for easy cross-platform compilation
 
-- C++17 compatible compiler
-- CMake 3.14 or higher
-- libcurl
-- CLI11
-- indicators
+---
 
-## Building from Source
+## 🛠️ Requirements
+Make sure the following are installed before building:
 
-1. Clone the repository:
-   ```
-   git clone https://github.com/Dank-del/eru.git
-   cd eru
-   ```
+- C++17 compatible compiler (MSVC, GCC, or Clang)
+- [CMake 3.14+](https://cmake.org/download/)
+- [vcpkg](https://github.com/microsoft/vcpkg) (for dependency management)
 
-2. Create a build directory and navigate to it:
-   ```
-   mkdir build && cd build
-   ```
+---
 
-3. Configure the project with CMake:
-   ```
-   cmake ..
-   ```
+## 🚀 Build Instructions
 
-4. Build the project:
-   ```
-   cmake --build .
-   ```
+```bash
+# Clone the repository
+git clone https://github.com/spacedragonx/File-Downloader
+cd File-Downloader
 
-## Usage
+# Install dependencies via vcpkg (example)
+vcpkg install cpr cli11 indicators
 
-After building, you can run Eru using the following command:
+# Configure build
+cmake -B build -S .
 
-```
-./src/eru --url <download_url> [options]
-```
-
-### Options
-
-- `-u, --url <url>`: Specify the URL of the file to download (required)
-- `-o, --output <filename>`: Set the output filename (optional, auto-detected if not specified)
-- `-t, --threads <number>`: Set the number of download threads (default: 4)
-- `-a, --about`: Display information about Eru
-- `-h, --help`: Show help message
-
-### Examples
-
-1. Download a file using default settings:
-   ```
-   ./src/eru --url https://example.com/large_file.zip
-   ```
-
-2. Download a file with a custom output name and 8 threads:
-   ```
-   ./src/eru --url https://example.com/large_file.zip --output my_file.zip --threads 8
-   ```
-
-3. Display information about Eru:
-   ```
-   ./src/eru --about
-   ```
-
-## Contributing
-
-Contributions to Eru are welcome! Please feel free to submit a Pull Request.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Author
-
-Sayan Biswas
-- Email: me@sayanbiswas.in
+# Build project
+cmake --build build
 
 ## Acknowledgments
 
