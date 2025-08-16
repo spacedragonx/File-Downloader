@@ -31,16 +31,19 @@ Make sure the following are installed before building:
 # Clone the repository
 git clone https://github.com/spacedragonx/File-Downloader
 cd File-Downloader
-
+```
 # Install dependencies via vcpkg (example)
+```bash
 vcpkg install cpr cli11 indicators
-
+```
 # Configure build
+```bash
 cmake -B build -S .
-
+```
 # Build project
+```bash
 cmake --build build
-
+```
 ## Acknowledgments
 
 - [CPR](https://github.com/libcpr/cpr) for HTTP requests
