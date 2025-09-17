@@ -1,5 +1,5 @@
 # Multi-threaded File Downloader
-<img width="957" alt="image" src="">
+<img width="957" alt="terminal image" src="https://github.com/spacedragonx/File-Downloader/blob/master/Images/TerminalOutput.png?raw=true">
 
 
 ## 📌 Overview
