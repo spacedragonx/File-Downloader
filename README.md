@@ -20,6 +20,8 @@ _Accelerate Your Downloads, Unleash Seamless Efficiency_
 
 </div>
 
+---
+
 ## Table of Contents
 
 * [Overview](#overview)
