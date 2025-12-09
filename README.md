@@ -20,9 +20,6 @@ _Accelerate Your Downloads, Unleash Seamless Efficiency_
 
 </div>
 
-<img width="957" alt="terminal image" src="https://github.com/spacedragonx/File-Downloader/blob/master/Images/TerminalOutput.png?raw=true">
-
----
 ## Table of Contents
 
 * [Overview](#overview)
@@ -117,6 +114,11 @@ cmake --build build
 ```bash
 ./File-Downloader [https://proof.ovh.net/files/100Mb.dat](https://proof.ovh.net/files/100Mb.dat) my_file.dat 8
 ```
+
+### Output:
+<img width="957" alt="terminal image" src="https://github.com/spacedragonx/File-Downloader/blob/master/Images/TerminalOutput.png?raw=true">
+
+
 ---
 
 ## Acknowledgments
